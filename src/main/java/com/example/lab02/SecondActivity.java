@@ -17,9 +17,9 @@ public class SecondActivity extends AppCompatActivity {
         setContentView(R.layout.activity_second);
 
         Intent intent = getIntent();
-        String name = intent.getStringExtra("userName");
+        String userEmail = intent.getStringExtra("userEmail");
 
         TextView textView = findViewById(R.id.Success);
-        textView.setText("Welcome  " + name);
+        textView.setText("Welcome  " + userEmail);
     }
 }
